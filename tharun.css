@@ -1,0 +1,69 @@
+/* General Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f9f9f9;
+    color: #145a32;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+/* Customizing section titles */
+h2 {
+    font-size: 2rem;
+    border-bottom: 3px solid #198754; /* Bootstrap success color */
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    color: #198754;
+}
+
+/* Cards for project section */
+.card-title a {
+    color: #198754;
+    text-decoration: none;
+}
+
+.card-title a:hover {
+    text-decoration: underline;
+    color: #145a32; /* Slightly darker green for hover */
+}
+
+/* Profile Image */
+img {
+    border-radius: 50%;
+}
+
+.profile-photo {
+    width: 150px; /* Adjusted width for better responsiveness */
+    height: 150px; /* Adjusted height for consistent ratio */
+    border-radius: 50%;
+    border: 4px solid #198754; /* Adding border for emphasis */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    h2 {
+        font-size: 1.6rem;
+    }
+
+    .profile-photo {
+        width: 120px;
+        height: 120px;
+    }
+}
+
+@media (max-width: 576px) {
+    img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .profile-photo {
+        width: 100px;
+        height: 100px;
+    }
+
+    h2 {
+        font-size: 1.4rem;
+    }
+}
